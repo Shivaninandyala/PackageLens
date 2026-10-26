@@ -30,6 +30,6 @@ export default {
   },
   permissions: {},
   info: {},
-  github: '',
+  github: 'https://github.com/Shivaninandyala/PackageLens',
   demovideo: '',
 };
