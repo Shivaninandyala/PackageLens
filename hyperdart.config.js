@@ -31,5 +31,5 @@ export default {
   permissions: {},
   info: {},
   github: 'https://github.com/Shivaninandyala/PackageLens',
-  demovideo: '',
+  demovideo: 'https://youtu.be/Jbwd-u0_0K8?si=x9QJZ_oDAvf09gcG',
 };
