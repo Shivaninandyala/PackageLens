@@ -132,7 +132,7 @@ async function getPackage(name) {
         ? latest.license
         : latest.license?.type || null,
     repository: repository?.replace(/^git\+/, "").replace(/\.git$/, "") || null,
-    engines: latest.engines?.node || null,
+    engines: latest.engines?.node || metadata.engines?.node || null,
     deprecated: latest.deprecated || null,
   };
 }

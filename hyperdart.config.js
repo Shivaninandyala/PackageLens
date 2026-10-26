@@ -14,7 +14,7 @@ export default {
   query_format: {
     regex: [
       '(npm( packages?)?|npm package info|package info) HD_PACKAGES.NPM_PACKAGES',
-      '(latest|current) version of HD_PACKAGES.NPM_PACKAGES',
+      '(show me )?(what is )?(the )?(latest|current) version of HD_PACKAGES.NPM_PACKAGES',
       'compare( npm)?( packages?)? HD_PACKAGES.NPM_PACKAGES(,| vs| versus| and)? HD_PACKAGES.NPM_PACKAGES((,| vs| versus| and)? HD_PACKAGES.NPM_PACKAGES)?',
       '(npm )?(alternatives?( to| for)|packages? (like|similar to)) HD_PACKAGES.NPM_PACKAGES( npm)?',
     ],
