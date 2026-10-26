@@ -1,0 +1,34 @@
+
+[
+  {
+    "component": "packagelens",
+    "query": "compare react and vue",
+    "entities": [
+      {
+        "word": "react",
+        "sourceID": "react",
+        "collectionName": "NPM_PACKAGES",
+        "collectionType": "HD_PACKAGES",
+        "entityInfo": {
+          "repository_url": "https://github.com/facebook/react"
+        },
+        "relevanceScore": 99.8
+      },
+      {
+        "word": "vue",
+        "sourceID": "vue",
+        "collectionName": "NPM_PACKAGES",
+        "collectionType": "HD_PACKAGES",
+        "entityInfo": {
+          "repository_url": "https://github.com/vuejs/core"
+        },
+        "relevanceScore": 97.3
+      }
+    ],
+    "keyword": [],
+    "genericQuery": "compare HD_PACKAGES__NPM_PACKAGES and HD_PACKAGES__NPM_PACKAGES",
+    "queryRegex": "compare( npm)?( packages?)? HD_PACKAGES__NPM_PACKAGES(,| vs| versus| and) HD_PACKAGES__NPM_PACKAGES((,| vs| versus| and) HD_PACKAGES__NPM_PACKAGES)?",
+    "unambiguous": true,
+    "suggestedPlace": "sidebar"
+  }
+]

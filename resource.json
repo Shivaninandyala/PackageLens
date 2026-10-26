@@ -1,0 +1,80 @@
+
+{
+  "title": "NPM Package Information",
+  "description": "Provides package details, version and download statistics, package comparisons, and alternatives using the npm registry.",
+  "componentScope": {
+    "supportedIntents": [
+      {
+        "intent": "package-details",
+        "description": "Retrieve details about a named npm package, including its latest version, description, weekly downloads, release date, license, repository, Node.js requirements, and deprecation status.",
+        "example": [
+          "npm package info react",
+          "Show me the latest version of express",
+          "What is the license for lodash?"
+        ]
+      },
+      {
+        "intent": "package-comparison",
+        "description": "Compare two or three npm packages using their published metadata and download statistics.",
+        "example": [
+          "Compare react and vue",
+          "Compare axios vs got",
+          "Compare express, fastify and koa"
+        ]
+      },
+      {
+        "intent": "package-alternatives",
+        "description": "Find related npm packages or alternatives to a named package using npm registry search results.",
+        "example": [
+          "Alternatives to moment",
+          "Packages like axios",
+          "Find npm packages for date formatting"
+        ]
+      }
+    ]
+  },
+  "schema": {
+    "type": "object",
+    "properties": {
+      "type": {
+        "type": "string",
+        "description": "Request type: package-details, package-comparison, or package-alternatives."
+      },
+      "filters": {
+        "type": "object",
+        "properties": {
+          "name": {
+            "type": "string",
+            "description": "The npm package name or search topic."
+          },
+          "packages": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "description": "Package names to compare."
+          }
+        },
+        "additionalProperties": true
+      },
+      "features": {
+        "type": "array",
+        "items": {
+          "type": "string"
+        },
+        "description": "Requested package fields, such as version, downloads, license, release date, repository, or alternatives."
+      },
+      "entities": {
+        "collections": [
+          "NPM_PACKAGES"
+        ]
+      }
+    },
+    "required": [
+      "type",
+      "filters",
+      "features",
+      "entities"
+    ]
+  }
+}
